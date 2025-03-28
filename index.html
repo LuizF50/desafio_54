@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada dos Elfos Codificadores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Jornada dos Elfos Codificadores</h1>
+    <div class="frame">
+        <p><strong>Os elfos começam em um ponto inicial da floresta e recebem uma lista de movimentos:</strong></p>
+        <ul class="movimentos-horizontal">
+            <li><strong>norte</strong>: +y</li>
+            <li><strong>leste</strong>: +x</li>
+            <li><strong>sul</strong>: -y</li>
+            <li><strong>oeste</strong>: -x</li>
+        </ul>
+        <p>Insira seus movimentos (separe por vírgulas, máximo de 6):</p>
+        <input type="text" id="movimentosInput" placeholder="Exemplo: norte,leste,sul,oeste,norte,leste">
+        <button class="custom-btn btn-10" onclick="calcularJornada()">Calcular Rota</button>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
